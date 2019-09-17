@@ -20,6 +20,12 @@ client.on("message", message => {
             timestamp: message.createdAt,
         },
     });
+    client.channels.get("623371226869661697").send({
+        embed: {
+            fields: [{ name: "Feedback内容", value: message.cleanContent }],
+            timestamp: message.createdAt,
+        }
+    });
     return message.channel.send(
         "フィードバックを受け付けました、ありがとうございます。"
     );
