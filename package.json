@@ -1,8 +1,17 @@
 {
+    "name": "discord-feedback-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Escgroup/Discord-feedback-bot.git",
+    "author": "[Esc]",
+    "license": "MIT",
     "scripts": {
         "dev": "node --require dotenv/config index.js",
         "lint": "eslint .",
         "fix": "eslint --fix ."
+    },
+    "dependencies": {
+        "discord.js": "^11.5.1"
     },
     "devDependencies": {
         "dotenv": "^8.1.0",
